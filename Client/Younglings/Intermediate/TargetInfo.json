@@ -1,0 +1,14 @@
+{
+	"Targets": [
+		{
+			"Name": "Younglings",
+			"Path": "C:\\HTW\\5.Semester\\Vertiefung der Programmierung\\Projekt\\Younglings\\Source\\Younglings.Target.cs",
+			"Type": "Game"
+		},
+		{
+			"Name": "YounglingsEditor",
+			"Path": "C:\\HTW\\5.Semester\\Vertiefung der Programmierung\\Projekt\\Younglings\\Source\\YounglingsEditor.Target.cs",
+			"Type": "Editor"
+		}
+	]
+}
