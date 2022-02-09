@@ -44,4 +44,27 @@ Der Code für den Client ist im folgenden Pfad zu finden:<br />
 *request.cpp* und *request.h* - dies sind die Dateien, welche in das eigentliche Spiel implementiert werden sollten.<br />
 
 
-## Client - UE4 Spiel
+## UE4 Spiel
+In dem Ordner *__..\Client\Younglings\Source\Younglings__* befinden sich die CodeDateien für das Unreal Engine Spiel.<br/>
+Es bietet sich an für die Inspektion des SourceCodes, die .sln in VisualStudio zu öffnen. Die .uaproject-Datei ist spezifisch<br/>
+für den Editor der UnrealEngine4 und erfordert jene installiert zu haben.<br/>
+*MainMenu.cpp* - ist die C++-Klasse hinter dem MainMenu-Widget. Es steuert die Logik des Widgets.<br/>
+*GameOver.cpp* - ist die C++-Klasse hinter dem GameOver-Widget. Es steuert die Logik des Widgets.<br/>
+*GameHud.cpp* - ist die C++-Klasse hinter dem HUD-Widget. Es steuert die Logik des HUDs.<br/>
+*PauseMenu.cpp* - ist die C++-Klasse hinter dem Pausen-Menü-Widget. Es steuert die Logik des Widgets.<br/>
+*ScoreTable.cpp* - ist die C++-Klasse hinter dem Highscoretabellen-Widget. Es steuert die Logik und das Verhalten des Widgets.<br/>
+*ScoreTableRow.cpp* - ist die C++-Klasse hinter dem ScoreTableRow-Widget. Es ist ein Zeilen-Element der Highscoretabelle.<br/>
+*CoinItem.cpp* - Klasse hinter dem Münz-Item. Steuert das Verhalten und die Interaktion des Münz-Items.</br>
+*FloorTile.cpp* - Klasse für das BodenFeld Objek, worüber der Spieler läuft. Wird dynamisch vor dem Spieler erzeugt und hinter</br>
+dem Spieler zerstört, um Resourcen zu sparen.<br/>
+*Obstacle.cpp* - Ist für die Interaktion und das Verhalten der Hindernisse zuständig.<br/>
+*RunAnimInstance.cpp* - AnimationsInstanz klasse für die Animation des Mannequins.<br/>
+*RunCharacter.cpp* - Klasse hinter dem rennenden Mannequin. Ist für die Interaktion mit den Münzen, Hindernissen zuständig, sowie für Sprünge, Spurenwechsel<br/>
+und Soundeffekte.<br/>
+*MainMenuGameMode.cpp* - Ist eine Basisklasse für des MainMenuLevel. Die Interaktionen der Klassen dieses Levels, werden hier zusammengeführt.<br/>
+*YounglingsGameModeBase.cpp* - Ist eine Basisklasse des SpielLevels. Hier werden solche Werte, wie LebensAnzahl und Score gespeichert.<br/>
+Die Funktionalität des Spiels wird hier, dem Hauptknotenpunkt, zusammengeführt.
+
+### Game Export 
+Im Ordner __..\Game__ befindet sich die Spiele .exe, welche man zum Spielen ausführen muss. Es startet sich dann das Spiel.
+
