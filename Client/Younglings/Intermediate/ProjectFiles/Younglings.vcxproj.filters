@@ -120,5 +120,6 @@
     <ClInclude Include="..\..\Source\Younglings\YounglingsGameModeBase.h">
       <Filter>Source\Younglings</Filter>
     </ClInclude>
+    <None Include="packages.config" />
   </ItemGroup>
 </Project>
