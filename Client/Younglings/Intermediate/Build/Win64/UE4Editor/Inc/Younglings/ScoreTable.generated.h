@@ -13,20 +13,22 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #endif
 #define YOUNGLINGS_ScoreTable_generated_h
 
-#define Younglings_Source_Younglings_ScoreTable_h_18_SPARSE_DATA
-#define Younglings_Source_Younglings_ScoreTable_h_18_RPC_WRAPPERS \
+#define Younglings_Source_Younglings_ScoreTable_h_16_SPARSE_DATA
+#define Younglings_Source_Younglings_ScoreTable_h_16_RPC_WRAPPERS \
  \
 	DECLARE_FUNCTION(execOnRestartClick); \
-	DECLARE_FUNCTION(execOnMainMenuClick);
+	DECLARE_FUNCTION(execOnMainMenuClick); \
+	DECLARE_FUNCTION(execSetTextBlockText);
 
 
-#define Younglings_Source_Younglings_ScoreTable_h_18_RPC_WRAPPERS_NO_PURE_DECLS \
+#define Younglings_Source_Younglings_ScoreTable_h_16_RPC_WRAPPERS_NO_PURE_DECLS \
  \
 	DECLARE_FUNCTION(execOnRestartClick); \
-	DECLARE_FUNCTION(execOnMainMenuClick);
+	DECLARE_FUNCTION(execOnMainMenuClick); \
+	DECLARE_FUNCTION(execSetTextBlockText);
 
 
-#define Younglings_Source_Younglings_ScoreTable_h_18_INCLASS_NO_PURE_DECLS \
+#define Younglings_Source_Younglings_ScoreTable_h_16_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesUScoreTable(); \
 	friend struct Z_Construct_UClass_UScoreTable_Statics; \
@@ -35,7 +37,7 @@ public: \
 	DECLARE_SERIALIZER(UScoreTable)
 
 
-#define Younglings_Source_Younglings_ScoreTable_h_18_INCLASS \
+#define Younglings_Source_Younglings_ScoreTable_h_16_INCLASS \
 private: \
 	static void StaticRegisterNativesUScoreTable(); \
 	friend struct Z_Construct_UClass_UScoreTable_Statics; \
@@ -44,7 +46,7 @@ public: \
 	DECLARE_SERIALIZER(UScoreTable)
 
 
-#define Younglings_Source_Younglings_ScoreTable_h_18_STANDARD_CONSTRUCTORS \
+#define Younglings_Source_Younglings_ScoreTable_h_16_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API UScoreTable(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UScoreTable) \
@@ -57,7 +59,7 @@ private: \
 public:
 
 
-#define Younglings_Source_Younglings_ScoreTable_h_18_ENHANCED_CONSTRUCTORS \
+#define Younglings_Source_Younglings_ScoreTable_h_16_ENHANCED_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API UScoreTable(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()) : Super(ObjectInitializer) { }; \
 private: \
@@ -70,34 +72,36 @@ public: \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UScoreTable)
 
 
-#define Younglings_Source_Younglings_ScoreTable_h_18_PRIVATE_PROPERTY_OFFSET \
+#define Younglings_Source_Younglings_ScoreTable_h_16_PRIVATE_PROPERTY_OFFSET \
 	FORCEINLINE static uint32 __PPO__ScoreTableRowWidgetClass() { return STRUCT_OFFSET(UScoreTable, ScoreTableRowWidgetClass); } \
 	FORCEINLINE static uint32 __PPO__MainMenuBtn() { return STRUCT_OFFSET(UScoreTable, MainMenuBtn); } \
 	FORCEINLINE static uint32 __PPO__RestartBtn() { return STRUCT_OFFSET(UScoreTable, RestartBtn); } \
-	FORCEINLINE static uint32 __PPO__ValueScrollBox() { return STRUCT_OFFSET(UScoreTable, ValueScrollBox); }
+	FORCEINLINE static uint32 __PPO__ValueScrollBox() { return STRUCT_OFFSET(UScoreTable, ValueScrollBox); } \
+	FORCEINLINE static uint32 __PPO__YourNameText() { return STRUCT_OFFSET(UScoreTable, YourNameText); } \
+	FORCEINLINE static uint32 __PPO__YourScoreText() { return STRUCT_OFFSET(UScoreTable, YourScoreText); }
 
 
-#define Younglings_Source_Younglings_ScoreTable_h_15_PROLOG
-#define Younglings_Source_Younglings_ScoreTable_h_18_GENERATED_BODY_LEGACY \
+#define Younglings_Source_Younglings_ScoreTable_h_13_PROLOG
+#define Younglings_Source_Younglings_ScoreTable_h_16_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	Younglings_Source_Younglings_ScoreTable_h_18_PRIVATE_PROPERTY_OFFSET \
-	Younglings_Source_Younglings_ScoreTable_h_18_SPARSE_DATA \
-	Younglings_Source_Younglings_ScoreTable_h_18_RPC_WRAPPERS \
-	Younglings_Source_Younglings_ScoreTable_h_18_INCLASS \
-	Younglings_Source_Younglings_ScoreTable_h_18_STANDARD_CONSTRUCTORS \
+	Younglings_Source_Younglings_ScoreTable_h_16_PRIVATE_PROPERTY_OFFSET \
+	Younglings_Source_Younglings_ScoreTable_h_16_SPARSE_DATA \
+	Younglings_Source_Younglings_ScoreTable_h_16_RPC_WRAPPERS \
+	Younglings_Source_Younglings_ScoreTable_h_16_INCLASS \
+	Younglings_Source_Younglings_ScoreTable_h_16_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define Younglings_Source_Younglings_ScoreTable_h_18_GENERATED_BODY \
+#define Younglings_Source_Younglings_ScoreTable_h_16_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	Younglings_Source_Younglings_ScoreTable_h_18_PRIVATE_PROPERTY_OFFSET \
-	Younglings_Source_Younglings_ScoreTable_h_18_SPARSE_DATA \
-	Younglings_Source_Younglings_ScoreTable_h_18_RPC_WRAPPERS_NO_PURE_DECLS \
-	Younglings_Source_Younglings_ScoreTable_h_18_INCLASS_NO_PURE_DECLS \
-	Younglings_Source_Younglings_ScoreTable_h_18_ENHANCED_CONSTRUCTORS \
+	Younglings_Source_Younglings_ScoreTable_h_16_PRIVATE_PROPERTY_OFFSET \
+	Younglings_Source_Younglings_ScoreTable_h_16_SPARSE_DATA \
+	Younglings_Source_Younglings_ScoreTable_h_16_RPC_WRAPPERS_NO_PURE_DECLS \
+	Younglings_Source_Younglings_ScoreTable_h_16_INCLASS_NO_PURE_DECLS \
+	Younglings_Source_Younglings_ScoreTable_h_16_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 

@@ -4,24 +4,23 @@
 #include "ScoreTable.h"
 
 #include "ScoreTableRow.h"
+#include "YounglingsGameModeBase.h"
 #include "Components/Button.h"
+#include "Components/TextBlock.h"
 #include "Kismet/GameplayStatics.h"
 
 
 void UScoreTable::NativeConstruct()
 {
-	ScoreMap.insert(std::make_pair(FString("It's over Anakin"), 67));
-	ScoreMap.insert(std::make_pair(FString("I have the"), 68));
-	ScoreMap.insert(std::make_pair(FString("High Ground"), 69));
-	ScoreMap.insert(std::make_pair(FString("The Senate"), 66));
-	ScoreMap.insert(std::make_pair(FString("Like a Bantha"), 5));
-	ScoreMap.insert(std::make_pair(FString("Bantha"), 54));
+	AYounglingsGameModeBase* RunGameMode = Cast<AYounglingsGameModeBase>(UGameplayStatics::GetGameMode(GetWorld()));
+	
+	
 	
 	if (IsValid(ScoreTableRowWidgetClass))
 	{
-		if (!ScoreMap.empty())
+		if (!RunGameMode->ScoreMap.empty())
 		{
-			for (const auto Score : ScoreMap)
+			for (const auto Score : RunGameMode->ScoreMap)
 			{
 				UUserWidget* Widget = CreateWidget(GetWorld(), ScoreTableRowWidgetClass);
 				check(Widget);
@@ -64,5 +63,18 @@ void UScoreTable::OnRestartClick()
 	if (World)
 	{
 		UKismetSystemLibrary::ExecuteConsoleCommand(World, TEXT("RestartLevel"));
+	}
+}
+
+void UScoreTable::SetTextBlockText(FText YourName, FText YourScore)
+{
+	if (YourNameText)
+	{
+		YourNameText->Text = YourName;
+	}
+
+	if (YourScoreText)
+	{
+		YourScoreText->Text = YourScore;
 	}
 }

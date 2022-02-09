@@ -3,6 +3,8 @@
 
 #include "GameOver.h"
 
+#include "ScoreTable.h"
+#include "YounglingsGameModeBase.h"
 #include "Components/Button.h"
 #include "Kismet/GameplayStatics.h"
 
@@ -16,6 +18,11 @@ void UGameOver::NativeConstruct()
 	if (RestartBtn)
 	{
 		RestartBtn->OnClicked.AddDynamic(this, &UGameOver::OnRestartClick);
+	}
+
+	if (SaveScoreBtn)
+	{
+		SaveScoreBtn->OnClicked.AddDynamic(this, &UGameOver::OnSaveScoreClick);
 	}
 }
 
@@ -37,4 +44,18 @@ void UGameOver::OnRestartClick()
 	{
 		UKismetSystemLibrary::ExecuteConsoleCommand(World, TEXT("RestartLevel"));
 	}
+}
+
+void UGameOver::OnSaveScoreClick()
+{
+	RunGameMode = Cast<AYounglingsGameModeBase>(UGameplayStatics::GetGameMode(GetWorld()));
+	if (NameEditableTextBox)
+	{
+		if (!NameEditableTextBox->Text.IsEmpty())
+		{
+			RunGameMode->Name = NameEditableTextBox->Text;
+		}
+	}
+	this->RemoveFromViewport();
+	RunGameMode->ShowScoreTable();
 }

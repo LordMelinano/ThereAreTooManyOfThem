@@ -2,8 +2,6 @@
 
 #pragma once
 
-#include <map>
-
 #include "CoreMinimal.h"
 #include "Blueprint/UserWidget.h"
 #include "Components/ScrollBox.h"
@@ -18,7 +16,9 @@ class YOUNGLINGS_API UScoreTable : public UUserWidget
 	GENERATED_BODY()
 
 public:
-	std::map<FString, int32> ScoreMap; 
+
+	UFUNCTION()
+	void SetTextBlockText(FText YourName, FText YourScore);
 	
 protected:
 	UPROPERTY(EditAnywhere, BlueprintReadOnly)
@@ -32,7 +32,13 @@ protected:
 
 	UPROPERTY(BlueprintReadWrite, meta =(BindWidget))
 	class UScrollBox* ValueScrollBox;
-
+	
+	UPROPERTY(BlueprintReadWrite, meta =(BindWidget))
+	class UTextBlock* YourNameText;
+	
+	UPROPERTY(BlueprintReadWrite, meta =(BindWidget))
+	class UTextBlock* YourScoreText;
+	
 	virtual void NativeConstruct() override;
 
 	UFUNCTION()
@@ -40,4 +46,6 @@ protected:
 
 	UFUNCTION()
 	void OnRestartClick();
+
+	
 };

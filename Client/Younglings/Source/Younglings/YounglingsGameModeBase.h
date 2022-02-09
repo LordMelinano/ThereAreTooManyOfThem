@@ -2,6 +2,8 @@
 
 #pragma once
 
+#include <map>
+
 #include "CoreMinimal.h"
 #include "GameFramework/GameModeBase.h"
 #include "YounglingsGameModeBase.generated.h"
@@ -21,9 +23,14 @@ class YOUNGLINGS_API AYounglingsGameModeBase : public AGameModeBase
 	GENERATED_BODY()
 
 public:
+	
+	std::map<FString, int32> ScoreMap;
+	
+	UPROPERTY(VisibleAnywhere)
+	FText Name = FText(FText::FromString("Bantha"));
 
 	UPROPERTY(VisibleAnywhere)
-	int32 TotalCoins = 0;
+	int32 TotalScore = 0;
 
 	UPROPERTY(VisibleAnywhere)
 	int32 NumberOfLives = 0;
@@ -33,6 +40,9 @@ public:
 
 	UPROPERTY(VisibleInstanceOnly, Category="Runtime")
 	class UGameHud* GameHud;
+
+	UPROPERTY(EditAnywhere,Category="Config")
+	TSubclassOf<UUserWidget> ScoreTableClass;
 	
 	UPROPERTY(EditAnywhere,Category="Config")
 	TSubclassOf<UUserWidget> GameHudClass;
@@ -81,6 +91,9 @@ public:
 	
 	UFUNCTION(BlueprintCallable)
 	void RemoveTile(AFloorTile* Tile);
+
+	UFUNCTION(BlueprintCallable)
+	void ShowScoreTable();
 	
 
 protected:

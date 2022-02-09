@@ -13,20 +13,22 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #endif
 #define YOUNGLINGS_GameOver_generated_h
 
-#define Younglings_Source_Younglings_GameOver_h_15_SPARSE_DATA
-#define Younglings_Source_Younglings_GameOver_h_15_RPC_WRAPPERS \
+#define Younglings_Source_Younglings_GameOver_h_17_SPARSE_DATA
+#define Younglings_Source_Younglings_GameOver_h_17_RPC_WRAPPERS \
  \
+	DECLARE_FUNCTION(execOnSaveScoreClick); \
 	DECLARE_FUNCTION(execOnRestartClick); \
 	DECLARE_FUNCTION(execOnMainMenuClick);
 
 
-#define Younglings_Source_Younglings_GameOver_h_15_RPC_WRAPPERS_NO_PURE_DECLS \
+#define Younglings_Source_Younglings_GameOver_h_17_RPC_WRAPPERS_NO_PURE_DECLS \
  \
+	DECLARE_FUNCTION(execOnSaveScoreClick); \
 	DECLARE_FUNCTION(execOnRestartClick); \
 	DECLARE_FUNCTION(execOnMainMenuClick);
 
 
-#define Younglings_Source_Younglings_GameOver_h_15_INCLASS_NO_PURE_DECLS \
+#define Younglings_Source_Younglings_GameOver_h_17_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesUGameOver(); \
 	friend struct Z_Construct_UClass_UGameOver_Statics; \
@@ -35,7 +37,7 @@ public: \
 	DECLARE_SERIALIZER(UGameOver)
 
 
-#define Younglings_Source_Younglings_GameOver_h_15_INCLASS \
+#define Younglings_Source_Younglings_GameOver_h_17_INCLASS \
 private: \
 	static void StaticRegisterNativesUGameOver(); \
 	friend struct Z_Construct_UClass_UGameOver_Statics; \
@@ -44,7 +46,7 @@ public: \
 	DECLARE_SERIALIZER(UGameOver)
 
 
-#define Younglings_Source_Younglings_GameOver_h_15_STANDARD_CONSTRUCTORS \
+#define Younglings_Source_Younglings_GameOver_h_17_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API UGameOver(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UGameOver) \
@@ -57,7 +59,7 @@ private: \
 public:
 
 
-#define Younglings_Source_Younglings_GameOver_h_15_ENHANCED_CONSTRUCTORS \
+#define Younglings_Source_Younglings_GameOver_h_17_ENHANCED_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API UGameOver(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()) : Super(ObjectInitializer) { }; \
 private: \
@@ -70,32 +72,35 @@ public: \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UGameOver)
 
 
-#define Younglings_Source_Younglings_GameOver_h_15_PRIVATE_PROPERTY_OFFSET \
+#define Younglings_Source_Younglings_GameOver_h_17_PRIVATE_PROPERTY_OFFSET \
+	FORCEINLINE static uint32 __PPO__ScoreTableWidgetClass() { return STRUCT_OFFSET(UGameOver, ScoreTableWidgetClass); } \
 	FORCEINLINE static uint32 __PPO__MainMenuBtn() { return STRUCT_OFFSET(UGameOver, MainMenuBtn); } \
-	FORCEINLINE static uint32 __PPO__RestartBtn() { return STRUCT_OFFSET(UGameOver, RestartBtn); }
+	FORCEINLINE static uint32 __PPO__RestartBtn() { return STRUCT_OFFSET(UGameOver, RestartBtn); } \
+	FORCEINLINE static uint32 __PPO__SaveScoreBtn() { return STRUCT_OFFSET(UGameOver, SaveScoreBtn); } \
+	FORCEINLINE static uint32 __PPO__NameEditableTextBox() { return STRUCT_OFFSET(UGameOver, NameEditableTextBox); }
 
 
-#define Younglings_Source_Younglings_GameOver_h_12_PROLOG
-#define Younglings_Source_Younglings_GameOver_h_15_GENERATED_BODY_LEGACY \
+#define Younglings_Source_Younglings_GameOver_h_14_PROLOG
+#define Younglings_Source_Younglings_GameOver_h_17_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	Younglings_Source_Younglings_GameOver_h_15_PRIVATE_PROPERTY_OFFSET \
-	Younglings_Source_Younglings_GameOver_h_15_SPARSE_DATA \
-	Younglings_Source_Younglings_GameOver_h_15_RPC_WRAPPERS \
-	Younglings_Source_Younglings_GameOver_h_15_INCLASS \
-	Younglings_Source_Younglings_GameOver_h_15_STANDARD_CONSTRUCTORS \
+	Younglings_Source_Younglings_GameOver_h_17_PRIVATE_PROPERTY_OFFSET \
+	Younglings_Source_Younglings_GameOver_h_17_SPARSE_DATA \
+	Younglings_Source_Younglings_GameOver_h_17_RPC_WRAPPERS \
+	Younglings_Source_Younglings_GameOver_h_17_INCLASS \
+	Younglings_Source_Younglings_GameOver_h_17_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define Younglings_Source_Younglings_GameOver_h_15_GENERATED_BODY \
+#define Younglings_Source_Younglings_GameOver_h_17_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	Younglings_Source_Younglings_GameOver_h_15_PRIVATE_PROPERTY_OFFSET \
-	Younglings_Source_Younglings_GameOver_h_15_SPARSE_DATA \
-	Younglings_Source_Younglings_GameOver_h_15_RPC_WRAPPERS_NO_PURE_DECLS \
-	Younglings_Source_Younglings_GameOver_h_15_INCLASS_NO_PURE_DECLS \
-	Younglings_Source_Younglings_GameOver_h_15_ENHANCED_CONSTRUCTORS \
+	Younglings_Source_Younglings_GameOver_h_17_PRIVATE_PROPERTY_OFFSET \
+	Younglings_Source_Younglings_GameOver_h_17_SPARSE_DATA \
+	Younglings_Source_Younglings_GameOver_h_17_RPC_WRAPPERS_NO_PURE_DECLS \
+	Younglings_Source_Younglings_GameOver_h_17_INCLASS_NO_PURE_DECLS \
+	Younglings_Source_Younglings_GameOver_h_17_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
