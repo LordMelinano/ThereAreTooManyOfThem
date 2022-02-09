@@ -12,7 +12,14 @@ Dies ist die Exe Datei des Servers. Bitte Speichern Sie diese Datein innerhalb e
 da die Datei eine Datenbank erstellt, auf welche später zugegriffen wird. Ist der Server erfolgreich <br />
 gestartet gibt dieser nun folgende zwei Zeilen aus<br />
 _"Opened database"_ und _"starting to listen"_<br />
-Danach ist der Server voll funktionsbereit.<br />
+Danach ist der Server voll funktionsbereit und man kann sehen, dass eine Datenbank erstellt wurde.<br />
+
+_Optional_
+Möchten Sie diesen nun testen können Sie den Code herunterladen und das Projekt in Visual Studio laden.<br />
+Hier müssen im Projektmappen-Explorer auf die Projektmappe einen Linksklick machen und das Startprojekt auswählen.<br />
+In diesem Falle den Client. Ist der Server gestartet und bereit können Sie nun über Visual Studio das Client Porjekt starten<br />
+Hier sehen Sie nun, dass zuerst eine GET-Anfrage geschickt wird und danach eine POST-Anfrage. Bei der GET-Anfrage werden Sie keine Daten<br />
+erhalten, da die Datenbank neu erstellt wurde. Starten Sie den Client erneut, sehen Sie, dass Sie einen Spieler mit einem Wert erhalten.
 
 Der Code für den Server ist im folgenden Pfad zu finden:<br />
 *__..\server\server__*<br />
@@ -37,3 +44,4 @@ Der Code für den Client ist im folgenden Pfad zu finden:<br />
 *request.cpp* und *request.h* - dies sind die Dateien, welche in das eigentliche Spiel implementiert werden sollten.<br />
 
 
+## Client - UE4 Spiel
