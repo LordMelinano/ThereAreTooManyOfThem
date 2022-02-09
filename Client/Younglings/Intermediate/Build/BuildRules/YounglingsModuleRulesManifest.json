@@ -1,8 +1,8 @@
 {
 	"SourceFiles": [
-		"C:\\GitHub\\ThereAreTooManyOfThem\\Client\\Younglings\\Source\\Younglings\\Younglings.Build.cs",
-		"C:\\GitHub\\ThereAreTooManyOfThem\\Client\\Younglings\\Source\\Younglings.Target.cs",
-		"C:\\GitHub\\ThereAreTooManyOfThem\\Client\\Younglings\\Source\\YounglingsEditor.Target.cs"
+		"C:\\HTW\\5.Semester\\Vertiefung der Programmierung\\Projekt\\Younglings\\Source\\Younglings\\Younglings.Build.cs",
+		"C:\\HTW\\5.Semester\\Vertiefung der Programmierung\\Projekt\\Younglings\\Source\\Younglings.Target.cs",
+		"C:\\HTW\\5.Semester\\Vertiefung der Programmierung\\Projekt\\Younglings\\Source\\YounglingsEditor.Target.cs"
 	],
 	"EngineVersion": "4.27.2"
 }

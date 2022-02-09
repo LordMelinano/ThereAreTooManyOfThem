@@ -2,12 +2,12 @@
 	"Targets": [
 		{
 			"Name": "Younglings",
-			"Path": "C:\\GitHub\\ThereAreTooManyOfThem\\Client\\Younglings\\Source\\Younglings.Target.cs",
+			"Path": "C:\\HTW\\5.Semester\\Vertiefung der Programmierung\\Projekt\\Younglings\\Source\\Younglings.Target.cs",
 			"Type": "Game"
 		},
 		{
 			"Name": "YounglingsEditor",
-			"Path": "C:\\GitHub\\ThereAreTooManyOfThem\\Client\\Younglings\\Source\\YounglingsEditor.Target.cs",
+			"Path": "C:\\HTW\\5.Semester\\Vertiefung der Programmierung\\Projekt\\Younglings\\Source\\YounglingsEditor.Target.cs",
 			"Type": "Editor"
 		}
 	]
