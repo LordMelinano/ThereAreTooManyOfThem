@@ -1,6 +1,6 @@
-C:\HTW\5.Semester\Vertiefung der Programmierung\Projekt\Younglings\Intermediate\Build\Win64\UE4Editor\Development\Younglings\Definitions.Younglings.h
-C:\HTW\5.Semester\Vertiefung der Programmierung\Projekt\Younglings\Source\Younglings\RunAnimInstance.h
-C:\HTW\5.Semester\Vertiefung der Programmierung\Projekt\Younglings\Intermediate\Build\Win64\UE4Editor\Inc\Younglings\RunAnimInstance.generated.h
+C:\GitHub\ThereAreTooManyOfThem\Client\Younglings\Intermediate\Build\Win64\UE4Editor\Development\Younglings\Definitions.Younglings.h
+C:\GitHub\ThereAreTooManyOfThem\Client\Younglings\Source\Younglings\RunAnimInstance.h
+C:\GitHub\ThereAreTooManyOfThem\Client\Younglings\Intermediate\Build\Win64\UE4Editor\Inc\Younglings\RunAnimInstance.generated.h
 C:\EpicGames\UE_4.27\Engine\Source\Runtime\Engine\Classes\GameFramework/PawnMovementComponent.h
 C:\EpicGames\UE_4.27\Engine\Source\Runtime\Engine\Classes\GameFramework/NavMovementComponent.h
 C:\EpicGames\UE_4.27\Engine\Source\Runtime\Engine\Classes\AI/Navigation/PathFollowingAgentInterface.h

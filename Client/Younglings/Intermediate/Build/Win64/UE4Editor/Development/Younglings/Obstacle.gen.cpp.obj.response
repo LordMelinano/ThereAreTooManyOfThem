@@ -231,8 +231,14 @@
 /I Editor\Kismet\Public
 /I ..\Intermediate\Build\Win64\UE4Editor\Inc\ClothingSystemRuntimeInterface
 /I Runtime\ClothingSystemRuntimeInterface\Public
-/I "C:\HTW\5.Semester\Vertiefung der Programmierung\Projekt\Younglings\Intermediate\Build\Win64\UE4Editor\Inc\Younglings"
-/I "C:\HTW\5.Semester\Vertiefung der Programmierung\Projekt\Younglings\Source"
+/I C:\GitHub\ThereAreTooManyOfThem\Client\Younglings\Intermediate\Build\Win64\UE4Editor\Inc\Younglings
+/I C:\GitHub\ThereAreTooManyOfThem\Client\Younglings\Source
+/I ..\Plugins\Runtime\Database\SQLiteSupport\Source
+/I ..\Plugins\Runtime\Database\SQLiteSupport\Source\SQLiteSupport\Public
+/I ..\Plugins\Runtime\Database\DatabaseSupport\Source
+/I ..\Plugins\Runtime\Database\DatabaseSupport\Source\DatabaseSupport\Public
+/I ..\Plugins\Runtime\Database\SQLiteCore\Source
+/I ..\Plugins\Runtime\Database\SQLiteCore\Source\SQLiteCore\Public
 /I ThirdParty\PhysX3\PxShared\include
 /I ThirdParty\PhysX3\PxShared\include\cudamanager
 /I ThirdParty\PhysX3\PxShared\include\filebuf
@@ -262,12 +268,12 @@
 /I "C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\shared"
 /I "C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\um"
 /I "C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\winrt"
-/FI"C:\HTW\5.Semester\Vertiefung der Programmierung\Projekt\Younglings\Intermediate\Build\Win64\YounglingsEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h"
-/Yu"C:\HTW\5.Semester\Vertiefung der Programmierung\Projekt\Younglings\Intermediate\Build\Win64\YounglingsEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h"
-/Fp"C:\HTW\5.Semester\Vertiefung der Programmierung\Projekt\Younglings\Intermediate\Build\Win64\YounglingsEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h.pch"
-"C:\HTW\5.Semester\Vertiefung der Programmierung\Projekt\Younglings\Intermediate\Build\Win64\UE4Editor\Inc\Younglings\Obstacle.gen.cpp"
-/FI"C:\HTW\5.Semester\Vertiefung der Programmierung\Projekt\Younglings\Intermediate\Build\Win64\UE4Editor\Development\Younglings\Definitions.Younglings.h"
-/Fo"C:\HTW\5.Semester\Vertiefung der Programmierung\Projekt\Younglings\Intermediate\Build\Win64\UE4Editor\Development\Younglings\Obstacle.gen.cpp.obj"
+/FI"C:\GitHub\ThereAreTooManyOfThem\Client\Younglings\Intermediate\Build\Win64\YounglingsEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h"
+/Yu"C:\GitHub\ThereAreTooManyOfThem\Client\Younglings\Intermediate\Build\Win64\YounglingsEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h"
+/Fp"C:\GitHub\ThereAreTooManyOfThem\Client\Younglings\Intermediate\Build\Win64\YounglingsEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h.pch"
+"C:\GitHub\ThereAreTooManyOfThem\Client\Younglings\Intermediate\Build\Win64\UE4Editor\Inc\Younglings\Obstacle.gen.cpp"
+/FI"C:\GitHub\ThereAreTooManyOfThem\Client\Younglings\Intermediate\Build\Win64\UE4Editor\Development\Younglings\Definitions.Younglings.h"
+/Fo"C:\GitHub\ThereAreTooManyOfThem\Client\Younglings\Intermediate\Build\Win64\UE4Editor\Development\Younglings\Obstacle.gen.cpp.obj"
 /TP
 /GR-
 /W4

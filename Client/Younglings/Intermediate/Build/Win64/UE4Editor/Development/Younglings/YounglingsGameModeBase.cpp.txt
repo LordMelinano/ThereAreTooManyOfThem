@@ -1,5 +1,5 @@
-C:\HTW\5.Semester\Vertiefung der Programmierung\Projekt\Younglings\Intermediate\Build\Win64\UE4Editor\Development\Younglings\Definitions.Younglings.h
-C:\HTW\5.Semester\Vertiefung der Programmierung\Projekt\Younglings\Source\Younglings\YounglingsGameModeBase.h
+C:\GitHub\ThereAreTooManyOfThem\Client\Younglings\Intermediate\Build\Win64\UE4Editor\Development\Younglings\Definitions.Younglings.h
+C:\GitHub\ThereAreTooManyOfThem\Client\Younglings\Source\Younglings\YounglingsGameModeBase.h
 C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.29.30133\INCLUDE\map
 C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.29.30133\INCLUDE\xtree
 C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.29.30133\INCLUDE\xmemory
@@ -12,12 +12,12 @@ C:\EpicGames\UE_4.27\Engine\Source\Runtime\Engine\Classes\GameFramework/GameMode
 C:\EpicGames\UE_4.27\Engine\Source\Runtime\Engine\Classes\Engine/ServerStatReplicator.h
 C:\EpicGames\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\ServerStatReplicator.generated.h
 C:\EpicGames\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\GameModeBase.generated.h
-C:\HTW\5.Semester\Vertiefung der Programmierung\Projekt\Younglings\Intermediate\Build\Win64\UE4Editor\Inc\Younglings\YounglingsGameModeBase.generated.h
-C:\HTW\5.Semester\Vertiefung der Programmierung\Projekt\Younglings\Source\Younglings\FloorTile.h
+C:\GitHub\ThereAreTooManyOfThem\Client\Younglings\Intermediate\Build\Win64\UE4Editor\Inc\Younglings\YounglingsGameModeBase.generated.h
+C:\GitHub\ThereAreTooManyOfThem\Client\Younglings\Source\Younglings\FloorTile.h
 C:\EpicGames\UE_4.27\Engine\Source\Runtime\Engine\Classes\Components/ArrowComponent.h
 C:\EpicGames\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\ArrowComponent.generated.h
-C:\HTW\5.Semester\Vertiefung der Programmierung\Projekt\Younglings\Intermediate\Build\Win64\UE4Editor\Inc\Younglings\FloorTile.generated.h
-C:\HTW\5.Semester\Vertiefung der Programmierung\Projekt\Younglings\Source\Younglings\GameHud.h
+C:\GitHub\ThereAreTooManyOfThem\Client\Younglings\Intermediate\Build\Win64\UE4Editor\Inc\Younglings\FloorTile.generated.h
+C:\GitHub\ThereAreTooManyOfThem\Client\Younglings\Source\Younglings\GameHud.h
 C:\EpicGames\UE_4.27\Engine\Source\Runtime\UMG\Public\Blueprint/UserWidget.h
 C:\EpicGames\UE_4.27\Engine\Source\Runtime\UMG\Public\Components/SlateWrapperTypes.h
 C:\EpicGames\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\UMG\SlateWrapperTypes.generated.h
@@ -117,8 +117,8 @@ C:\EpicGames\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\PropertyPath\
 C:\EpicGames\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\UMG\DynamicPropertyPath.generated.h
 C:\EpicGames\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\UMG\WidgetBlueprintGeneratedClass.generated.h
 C:\EpicGames\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\UMG\UserWidget.generated.h
-C:\HTW\5.Semester\Vertiefung der Programmierung\Projekt\Younglings\Intermediate\Build\Win64\UE4Editor\Inc\Younglings\GameHud.generated.h
-C:\HTW\5.Semester\Vertiefung der Programmierung\Projekt\Younglings\Source\Younglings\ScoreTable.h
+C:\GitHub\ThereAreTooManyOfThem\Client\Younglings\Intermediate\Build\Win64\UE4Editor\Inc\Younglings\GameHud.generated.h
+C:\GitHub\ThereAreTooManyOfThem\Client\Younglings\Source\Younglings\ScoreTable.h
 C:\EpicGames\UE_4.27\Engine\Source\Runtime\UMG\Public\Components/ScrollBox.h
 C:\EpicGames\UE_4.27\Engine\Source\Runtime\Slate\Public\Widgets/Layout/SScrollBox.h
 C:\EpicGames\UE_4.27\Engine\Source\Runtime\UMG\Public\Components/PanelWidget.h
@@ -126,7 +126,7 @@ C:\EpicGames\UE_4.27\Engine\Source\Runtime\UMG\Public\Components/PanelSlot.h
 C:\EpicGames\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\UMG\PanelSlot.generated.h
 C:\EpicGames\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\UMG\PanelWidget.generated.h
 C:\EpicGames\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\UMG\ScrollBox.generated.h
-C:\HTW\5.Semester\Vertiefung der Programmierung\Projekt\Younglings\Intermediate\Build\Win64\UE4Editor\Inc\Younglings\ScoreTable.generated.h
+C:\GitHub\ThereAreTooManyOfThem\Client\Younglings\Intermediate\Build\Win64\UE4Editor\Inc\Younglings\ScoreTable.generated.h
 C:\EpicGames\UE_4.27\Engine\Source\Runtime\Engine\Classes\Kismet/GameplayStatics.h
 C:\EpicGames\UE_4.27\Engine\Source\Runtime\Engine\Classes\Kismet/KismetSystemLibrary.h
 C:\EpicGames\UE_4.27\Engine\Source\Runtime\CoreUObject\Public\UObject/PropertyAccessUtil.h

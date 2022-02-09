@@ -1,5 +1,5 @@
-C:\HTW\5.Semester\Vertiefung der Programmierung\Projekt\Younglings\Intermediate\Build\Win64\UE4Editor\Development\Younglings\Definitions.Younglings.h
-C:\HTW\5.Semester\Vertiefung der Programmierung\Projekt\Younglings\Source\Younglings\ScoreTableRow.h
+C:\GitHub\ThereAreTooManyOfThem\Client\Younglings\Intermediate\Build\Win64\UE4Editor\Development\Younglings\Definitions.Younglings.h
+C:\GitHub\ThereAreTooManyOfThem\Client\Younglings\Source\Younglings\ScoreTableRow.h
 C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.29.30133\INCLUDE\map
 C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.29.30133\INCLUDE\xtree
 C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.29.30133\INCLUDE\xmemory
@@ -111,7 +111,7 @@ C:\EpicGames\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\PropertyPath\
 C:\EpicGames\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\UMG\DynamicPropertyPath.generated.h
 C:\EpicGames\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\UMG\WidgetBlueprintGeneratedClass.generated.h
 C:\EpicGames\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\UMG\UserWidget.generated.h
-C:\HTW\5.Semester\Vertiefung der Programmierung\Projekt\Younglings\Intermediate\Build\Win64\UE4Editor\Inc\Younglings\ScoreTableRow.generated.h
+C:\GitHub\ThereAreTooManyOfThem\Client\Younglings\Intermediate\Build\Win64\UE4Editor\Inc\Younglings\ScoreTableRow.generated.h
 C:\EpicGames\UE_4.27\Engine\Source\Runtime\UMG\Public\Components/TextBlock.h
 C:\EpicGames\UE_4.27\Engine\Source\Runtime\UMG\Public\Components/TextWidgetTypes.h
 C:\EpicGames\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\UMG\TextWidgetTypes.generated.h

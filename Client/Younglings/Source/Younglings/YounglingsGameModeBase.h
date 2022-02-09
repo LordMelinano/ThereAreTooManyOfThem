@@ -5,6 +5,7 @@
 #include <map>
 
 #include "CoreMinimal.h"
+#include "GameDatabase.h"
 #include "GameFramework/GameModeBase.h"
 #include "YounglingsGameModeBase.generated.h"
 
@@ -23,6 +24,8 @@ class YOUNGLINGS_API AYounglingsGameModeBase : public AGameModeBase
 	GENERATED_BODY()
 
 public:
+
+	GameDatabase* Database;
 	
 	std::map<FString, int32> ScoreMap;
 	

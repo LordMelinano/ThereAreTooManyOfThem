@@ -1,10 +1,10 @@
-C:\HTW\5.Semester\Vertiefung der Programmierung\Projekt\Younglings\Intermediate\Build\Win64\UE4Editor\Development\Younglings\Definitions.Younglings.h
-C:\HTW\5.Semester\Vertiefung der Programmierung\Projekt\Younglings\Source\Younglings\MainMenuGameMode.h
+C:\GitHub\ThereAreTooManyOfThem\Client\Younglings\Intermediate\Build\Win64\UE4Editor\Development\Younglings\Definitions.Younglings.h
+C:\GitHub\ThereAreTooManyOfThem\Client\Younglings\Source\Younglings\MainMenuGameMode.h
 C:\EpicGames\UE_4.27\Engine\Source\Runtime\Engine\Classes\GameFramework/GameModeBase.h
 C:\EpicGames\UE_4.27\Engine\Source\Runtime\Engine\Classes\Engine/ServerStatReplicator.h
 C:\EpicGames\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\ServerStatReplicator.generated.h
 C:\EpicGames\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\GameModeBase.generated.h
-C:\HTW\5.Semester\Vertiefung der Programmierung\Projekt\Younglings\Intermediate\Build\Win64\UE4Editor\Inc\Younglings\MainMenuGameMode.generated.h
+C:\GitHub\ThereAreTooManyOfThem\Client\Younglings\Intermediate\Build\Win64\UE4Editor\Inc\Younglings\MainMenuGameMode.generated.h
 C:\EpicGames\UE_4.27\Engine\Source\Runtime\UMG\Public\Blueprint/UserWidget.h
 C:\EpicGames\UE_4.27\Engine\Source\Runtime\UMG\Public\Components/SlateWrapperTypes.h
 C:\EpicGames\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\UMG\SlateWrapperTypes.generated.h

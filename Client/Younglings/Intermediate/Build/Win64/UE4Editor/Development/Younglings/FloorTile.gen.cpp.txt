@@ -1,7 +1,7 @@
-C:\HTW\5.Semester\Vertiefung der Programmierung\Projekt\Younglings\Intermediate\Build\Win64\UE4Editor\Development\Younglings\Definitions.Younglings.h
+C:\GitHub\ThereAreTooManyOfThem\Client\Younglings\Intermediate\Build\Win64\UE4Editor\Development\Younglings\Definitions.Younglings.h
 C:\EpicGames\UE_4.27\Engine\Source\Runtime\CoreUObject\Public\UObject/GeneratedCppIncludes.h
 C:\EpicGames\UE_4.27\Engine\Source\Runtime\CoreUObject\Public\UObject/MetaData.h
-C:\HTW\5.Semester\Vertiefung der Programmierung\Projekt\Younglings\Source\Younglings/FloorTile.h
+C:\GitHub\ThereAreTooManyOfThem\Client\Younglings\Source\Younglings/FloorTile.h
 C:\EpicGames\UE_4.27\Engine\Source\Runtime\Engine\Classes\Components/ArrowComponent.h
 C:\EpicGames\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\ArrowComponent.generated.h
-C:\HTW\5.Semester\Vertiefung der Programmierung\Projekt\Younglings\Intermediate\Build\Win64\UE4Editor\Inc\Younglings\FloorTile.generated.h
+C:\GitHub\ThereAreTooManyOfThem\Client\Younglings\Intermediate\Build\Win64\UE4Editor\Inc\Younglings\FloorTile.generated.h

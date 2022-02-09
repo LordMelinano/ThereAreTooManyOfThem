@@ -10,6 +10,8 @@
 
 void AYounglingsGameModeBase::BeginPlay()
 {
+	Database = new GameDatabase(TEXT("../Server/TooManyOfThem.db"), ESQLiteDatabaseOpenMode::ReadWrite);
+	
 	UGameplayStatics::GetPlayerController(GetWorld(),0)->bShowMouseCursor = true;
 
 	GameHud = Cast<UGameHud>(CreateWidget(GetWorld(), GameHudClass));
@@ -147,16 +149,6 @@ void AYounglingsGameModeBase::GameOver()
 			Widget->AddToViewport();
 		}
 	}
-	
-	/*if (IsValid(GameOverScreenClass))
-	{
-		UUserWidget* Widget = CreateWidget(GetWorld(), GameOverScreenClass);
-
-		if (Widget)
-		{
-			Widget->AddToViewport();
-		}
-	}*/
 }
 
 
