@@ -101,7 +101,6 @@ std::map<std::string, int> make_get_request(http_client& client, method mtd, jso
         tempScore[elmnt.key()] = elmnt.value();
         std::cout << elmnt.key() << "    " << elmnt.value() << std::endl;
     }
-    //jv.wait();
     return tempScore;
 }
 
@@ -110,20 +109,20 @@ int main()
 {
     http_client client(U("http://localhost/younglings"));
 
+    // GET Request
     auto nullvalue = json::value::null();
-    std::wcout << L"\nGET (get all values)\n";
-
+    std::wcout << L"\nGET\n";
     std::map<std::string, int> testMap;
     testMap = make_get_request(client, methods::GET, nullvalue);
 
 
-
-    /*auto value1 = json::value::array();
+    // POST Request
+    auto value1 = json::value::array();
     value1[0] = json::value::string(L"Monika");
     value1[1] = json::value::number(50);
 
-    std::wcout << L"\nPOST (get some values)\n";
-    make_post_request(client, methods::POST, value1);*/
+    std::wcout << L"\nPOST\n";
+    make_post_request(client, methods::POST, value1);
 
     return 0;
 }
