@@ -112,6 +112,13 @@ void EmptyLinkFunctionForGeneratedCodeYounglingsGameModeBase() {}
 		}
 		return ReturnFunction;
 	}
+	DEFINE_FUNCTION(AYounglingsGameModeBase::execShowScoreTable)
+	{
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		P_THIS->ShowScoreTable();
+		P_NATIVE_END;
+	}
 	DEFINE_FUNCTION(AYounglingsGameModeBase::execRemoveTile)
 	{
 		P_GET_OBJECT(AFloorTile,Z_Param_Tile);
@@ -166,6 +173,7 @@ void EmptyLinkFunctionForGeneratedCodeYounglingsGameModeBase() {}
 			{ "GameOver", &AYounglingsGameModeBase::execGameOver },
 			{ "PlayerDied", &AYounglingsGameModeBase::execPlayerDied },
 			{ "RemoveTile", &AYounglingsGameModeBase::execRemoveTile },
+			{ "ShowScoreTable", &AYounglingsGameModeBase::execShowScoreTable },
 		};
 		FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
 	}
@@ -338,6 +346,28 @@ void EmptyLinkFunctionForGeneratedCodeYounglingsGameModeBase() {}
 		}
 		return ReturnFunction;
 	}
+	struct Z_Construct_UFunction_AYounglingsGameModeBase_ShowScoreTable_Statics
+	{
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AYounglingsGameModeBase_ShowScoreTable_Statics::Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "YounglingsGameModeBase.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AYounglingsGameModeBase_ShowScoreTable_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AYounglingsGameModeBase, nullptr, "ShowScoreTable", nullptr, nullptr, 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AYounglingsGameModeBase_ShowScoreTable_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_AYounglingsGameModeBase_ShowScoreTable_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_AYounglingsGameModeBase_ShowScoreTable()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_AYounglingsGameModeBase_ShowScoreTable_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
 	UClass* Z_Construct_UClass_AYounglingsGameModeBase_NoRegister()
 	{
 		return AYounglingsGameModeBase::StaticClass();
@@ -350,9 +380,13 @@ void EmptyLinkFunctionForGeneratedCodeYounglingsGameModeBase() {}
 		static const UE4CodeGen_Private::FMetaDataPairParam Class_MetaDataParams[];
 #endif
 #if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_TotalCoins_MetaData[];
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_Name_MetaData[];
 #endif
-		static const UE4CodeGen_Private::FIntPropertyParams NewProp_TotalCoins;
+		static const UE4CodeGen_Private::FTextPropertyParams NewProp_Name;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_TotalScore_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FIntPropertyParams NewProp_TotalScore;
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_NumberOfLives_MetaData[];
 #endif
@@ -365,6 +399,10 @@ void EmptyLinkFunctionForGeneratedCodeYounglingsGameModeBase() {}
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_GameHud_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_GameHud;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_ScoreTableClass_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FClassPropertyParams NewProp_ScoreTableClass;
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_GameHudClass_MetaData[];
 #endif
@@ -422,6 +460,7 @@ void EmptyLinkFunctionForGeneratedCodeYounglingsGameModeBase() {}
 		{ &Z_Construct_UFunction_AYounglingsGameModeBase_GameOver, "GameOver" }, // 158700785
 		{ &Z_Construct_UFunction_AYounglingsGameModeBase_PlayerDied, "PlayerDied" }, // 3057849776
 		{ &Z_Construct_UFunction_AYounglingsGameModeBase_RemoveTile, "RemoveTile" }, // 2488494431
+		{ &Z_Construct_UFunction_AYounglingsGameModeBase_ShowScoreTable, "ShowScoreTable" }, // 805368488
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AYounglingsGameModeBase_Statics::Class_MetaDataParams[] = {
@@ -433,12 +472,19 @@ void EmptyLinkFunctionForGeneratedCodeYounglingsGameModeBase() {}
 	};
 #endif
 #if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AYounglingsGameModeBase_Statics::NewProp_TotalCoins_MetaData[] = {
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AYounglingsGameModeBase_Statics::NewProp_Name_MetaData[] = {
 		{ "Category", "YounglingsGameModeBase" },
 		{ "ModuleRelativePath", "YounglingsGameModeBase.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UClass_AYounglingsGameModeBase_Statics::NewProp_TotalCoins = { "TotalCoins", nullptr, (EPropertyFlags)0x0010000000020001, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AYounglingsGameModeBase, TotalCoins), METADATA_PARAMS(Z_Construct_UClass_AYounglingsGameModeBase_Statics::NewProp_TotalCoins_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AYounglingsGameModeBase_Statics::NewProp_TotalCoins_MetaData)) };
+	const UE4CodeGen_Private::FTextPropertyParams Z_Construct_UClass_AYounglingsGameModeBase_Statics::NewProp_Name = { "Name", nullptr, (EPropertyFlags)0x0010000000020001, UE4CodeGen_Private::EPropertyGenFlags::Text, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AYounglingsGameModeBase, Name), METADATA_PARAMS(Z_Construct_UClass_AYounglingsGameModeBase_Statics::NewProp_Name_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AYounglingsGameModeBase_Statics::NewProp_Name_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AYounglingsGameModeBase_Statics::NewProp_TotalScore_MetaData[] = {
+		{ "Category", "YounglingsGameModeBase" },
+		{ "ModuleRelativePath", "YounglingsGameModeBase.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UClass_AYounglingsGameModeBase_Statics::NewProp_TotalScore = { "TotalScore", nullptr, (EPropertyFlags)0x0010000000020001, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AYounglingsGameModeBase, TotalScore), METADATA_PARAMS(Z_Construct_UClass_AYounglingsGameModeBase_Statics::NewProp_TotalScore_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AYounglingsGameModeBase_Statics::NewProp_TotalScore_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AYounglingsGameModeBase_Statics::NewProp_NumberOfLives_MetaData[] = {
 		{ "Category", "YounglingsGameModeBase" },
@@ -461,6 +507,13 @@ void EmptyLinkFunctionForGeneratedCodeYounglingsGameModeBase() {}
 	};
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AYounglingsGameModeBase_Statics::NewProp_GameHud = { "GameHud", nullptr, (EPropertyFlags)0x00100000000a0809, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AYounglingsGameModeBase, GameHud), Z_Construct_UClass_UGameHud_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AYounglingsGameModeBase_Statics::NewProp_GameHud_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AYounglingsGameModeBase_Statics::NewProp_GameHud_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AYounglingsGameModeBase_Statics::NewProp_ScoreTableClass_MetaData[] = {
+		{ "Category", "Config" },
+		{ "ModuleRelativePath", "YounglingsGameModeBase.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_AYounglingsGameModeBase_Statics::NewProp_ScoreTableClass = { "ScoreTableClass", nullptr, (EPropertyFlags)0x0014000000000001, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AYounglingsGameModeBase, ScoreTableClass), Z_Construct_UClass_UUserWidget_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UClass_AYounglingsGameModeBase_Statics::NewProp_ScoreTableClass_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AYounglingsGameModeBase_Statics::NewProp_ScoreTableClass_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AYounglingsGameModeBase_Statics::NewProp_GameHudClass_MetaData[] = {
 		{ "Category", "Config" },
@@ -534,10 +587,12 @@ void EmptyLinkFunctionForGeneratedCodeYounglingsGameModeBase() {}
 #endif
 	const UE4CodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_AYounglingsGameModeBase_Statics::NewProp_OnLevelReset = { "OnLevelReset", nullptr, (EPropertyFlags)0x0010100010080000, UE4CodeGen_Private::EPropertyGenFlags::InlineMulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AYounglingsGameModeBase, OnLevelReset), Z_Construct_UDelegateFunction_Younglings_OnLevelReset__DelegateSignature, METADATA_PARAMS(Z_Construct_UClass_AYounglingsGameModeBase_Statics::NewProp_OnLevelReset_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AYounglingsGameModeBase_Statics::NewProp_OnLevelReset_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AYounglingsGameModeBase_Statics::PropPointers[] = {
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AYounglingsGameModeBase_Statics::NewProp_TotalCoins,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AYounglingsGameModeBase_Statics::NewProp_Name,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AYounglingsGameModeBase_Statics::NewProp_TotalScore,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AYounglingsGameModeBase_Statics::NewProp_NumberOfLives,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AYounglingsGameModeBase_Statics::NewProp_MaxLives,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AYounglingsGameModeBase_Statics::NewProp_GameHud,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AYounglingsGameModeBase_Statics::NewProp_ScoreTableClass,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AYounglingsGameModeBase_Statics::NewProp_GameHudClass,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AYounglingsGameModeBase_Statics::NewProp_FloorTileClass,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AYounglingsGameModeBase_Statics::NewProp_GameOverScreenClass,
@@ -578,7 +633,7 @@ void EmptyLinkFunctionForGeneratedCodeYounglingsGameModeBase() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AYounglingsGameModeBase, 1096655537);
+	IMPLEMENT_CLASS(AYounglingsGameModeBase, 612188576);
 	template<> YOUNGLINGS_API UClass* StaticClass<AYounglingsGameModeBase>()
 	{
 		return AYounglingsGameModeBase::StaticClass();

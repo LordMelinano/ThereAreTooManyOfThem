@@ -92,7 +92,7 @@ void AFloorTile::SpawnLaneItem(UArrowComponent* Lane, int32& NumBigs)
 		AObstacle* Obstacle = GetWorld()->SpawnActor<AObstacle>(SmallObstacleClass, SpawnLocation, SpawnParameters);
 		ChildActors.Add(Obstacle);
 	}
-	else if(UKismetMathLibrary::InRange_FloatFloat(RandVal, SpawnPercent2, SpawnPercent3, true, true))
+	else if(UKismetMathLibrary::InRange_FloatFloat(RandVal, SpawnPercent2+0.1f, SpawnPercent3, true, true))
 	{
 		if (NumBigs <= 1)
 		{
@@ -112,7 +112,7 @@ void AFloorTile::SpawnLaneItem(UArrowComponent* Lane, int32& NumBigs)
 		
 		
 	}
-	else if(UKismetMathLibrary::InRange_FloatFloat(RandVal, SpawnPercent3, 1.f, true, true))
+	else if(UKismetMathLibrary::InRange_FloatFloat(RandVal, SpawnPercent3+ 0.1f, 0.9f, true, true))
 	{
 		ACoinItem* Coin = GetWorld()->SpawnActor<ACoinItem>(CoinItemClass, SpawnLocation, SpawnParameters);
 		ChildActors.Add(Coin);

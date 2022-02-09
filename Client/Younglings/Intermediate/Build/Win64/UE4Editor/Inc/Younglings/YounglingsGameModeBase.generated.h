@@ -14,14 +14,14 @@ class AFloorTile;
 #endif
 #define YOUNGLINGS_YounglingsGameModeBase_generated_h
 
-#define Younglings_Source_Younglings_YounglingsGameModeBase_h_14_DELEGATE \
+#define Younglings_Source_Younglings_YounglingsGameModeBase_h_16_DELEGATE \
 static inline void FOnLevelReset_DelegateWrapper(const FMulticastScriptDelegate& OnLevelReset) \
 { \
 	OnLevelReset.ProcessMulticastDelegate<UObject>(NULL); \
 }
 
 
-#define Younglings_Source_Younglings_YounglingsGameModeBase_h_13_DELEGATE \
+#define Younglings_Source_Younglings_YounglingsGameModeBase_h_15_DELEGATE \
 struct _Script_Younglings_eventOnLivesCountChanged_Parms \
 { \
 	int32 LivesCount; \
@@ -34,7 +34,7 @@ static inline void FOnLivesCountChanged_DelegateWrapper(const FMulticastScriptDe
 }
 
 
-#define Younglings_Source_Younglings_YounglingsGameModeBase_h_12_DELEGATE \
+#define Younglings_Source_Younglings_YounglingsGameModeBase_h_14_DELEGATE \
 struct _Script_Younglings_eventOnCoinsCountChanged_Parms \
 { \
 	int32 CoinsCount; \
@@ -47,9 +47,10 @@ static inline void FOnCoinsCountChanged_DelegateWrapper(const FMulticastScriptDe
 }
 
 
-#define Younglings_Source_Younglings_YounglingsGameModeBase_h_21_SPARSE_DATA
-#define Younglings_Source_Younglings_YounglingsGameModeBase_h_21_RPC_WRAPPERS \
+#define Younglings_Source_Younglings_YounglingsGameModeBase_h_23_SPARSE_DATA
+#define Younglings_Source_Younglings_YounglingsGameModeBase_h_23_RPC_WRAPPERS \
  \
+	DECLARE_FUNCTION(execShowScoreTable); \
 	DECLARE_FUNCTION(execRemoveTile); \
 	DECLARE_FUNCTION(execPlayerDied); \
 	DECLARE_FUNCTION(execAddCoin); \
@@ -58,8 +59,9 @@ static inline void FOnCoinsCountChanged_DelegateWrapper(const FMulticastScriptDe
 	DECLARE_FUNCTION(execCreateInitialFloorTiles);
 
 
-#define Younglings_Source_Younglings_YounglingsGameModeBase_h_21_RPC_WRAPPERS_NO_PURE_DECLS \
+#define Younglings_Source_Younglings_YounglingsGameModeBase_h_23_RPC_WRAPPERS_NO_PURE_DECLS \
  \
+	DECLARE_FUNCTION(execShowScoreTable); \
 	DECLARE_FUNCTION(execRemoveTile); \
 	DECLARE_FUNCTION(execPlayerDied); \
 	DECLARE_FUNCTION(execAddCoin); \
@@ -68,7 +70,7 @@ static inline void FOnCoinsCountChanged_DelegateWrapper(const FMulticastScriptDe
 	DECLARE_FUNCTION(execCreateInitialFloorTiles);
 
 
-#define Younglings_Source_Younglings_YounglingsGameModeBase_h_21_INCLASS_NO_PURE_DECLS \
+#define Younglings_Source_Younglings_YounglingsGameModeBase_h_23_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesAYounglingsGameModeBase(); \
 	friend struct Z_Construct_UClass_AYounglingsGameModeBase_Statics; \
@@ -77,7 +79,7 @@ public: \
 	DECLARE_SERIALIZER(AYounglingsGameModeBase)
 
 
-#define Younglings_Source_Younglings_YounglingsGameModeBase_h_21_INCLASS \
+#define Younglings_Source_Younglings_YounglingsGameModeBase_h_23_INCLASS \
 private: \
 	static void StaticRegisterNativesAYounglingsGameModeBase(); \
 	friend struct Z_Construct_UClass_AYounglingsGameModeBase_Statics; \
@@ -86,7 +88,7 @@ public: \
 	DECLARE_SERIALIZER(AYounglingsGameModeBase)
 
 
-#define Younglings_Source_Younglings_YounglingsGameModeBase_h_21_STANDARD_CONSTRUCTORS \
+#define Younglings_Source_Younglings_YounglingsGameModeBase_h_23_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API AYounglingsGameModeBase(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(AYounglingsGameModeBase) \
@@ -99,7 +101,7 @@ private: \
 public:
 
 
-#define Younglings_Source_Younglings_YounglingsGameModeBase_h_21_ENHANCED_CONSTRUCTORS \
+#define Younglings_Source_Younglings_YounglingsGameModeBase_h_23_ENHANCED_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API AYounglingsGameModeBase(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()) : Super(ObjectInitializer) { }; \
 private: \
@@ -112,28 +114,28 @@ public: \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(AYounglingsGameModeBase)
 
 
-#define Younglings_Source_Younglings_YounglingsGameModeBase_h_21_PRIVATE_PROPERTY_OFFSET
-#define Younglings_Source_Younglings_YounglingsGameModeBase_h_18_PROLOG
-#define Younglings_Source_Younglings_YounglingsGameModeBase_h_21_GENERATED_BODY_LEGACY \
+#define Younglings_Source_Younglings_YounglingsGameModeBase_h_23_PRIVATE_PROPERTY_OFFSET
+#define Younglings_Source_Younglings_YounglingsGameModeBase_h_20_PROLOG
+#define Younglings_Source_Younglings_YounglingsGameModeBase_h_23_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	Younglings_Source_Younglings_YounglingsGameModeBase_h_21_PRIVATE_PROPERTY_OFFSET \
-	Younglings_Source_Younglings_YounglingsGameModeBase_h_21_SPARSE_DATA \
-	Younglings_Source_Younglings_YounglingsGameModeBase_h_21_RPC_WRAPPERS \
-	Younglings_Source_Younglings_YounglingsGameModeBase_h_21_INCLASS \
-	Younglings_Source_Younglings_YounglingsGameModeBase_h_21_STANDARD_CONSTRUCTORS \
+	Younglings_Source_Younglings_YounglingsGameModeBase_h_23_PRIVATE_PROPERTY_OFFSET \
+	Younglings_Source_Younglings_YounglingsGameModeBase_h_23_SPARSE_DATA \
+	Younglings_Source_Younglings_YounglingsGameModeBase_h_23_RPC_WRAPPERS \
+	Younglings_Source_Younglings_YounglingsGameModeBase_h_23_INCLASS \
+	Younglings_Source_Younglings_YounglingsGameModeBase_h_23_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define Younglings_Source_Younglings_YounglingsGameModeBase_h_21_GENERATED_BODY \
+#define Younglings_Source_Younglings_YounglingsGameModeBase_h_23_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	Younglings_Source_Younglings_YounglingsGameModeBase_h_21_PRIVATE_PROPERTY_OFFSET \
-	Younglings_Source_Younglings_YounglingsGameModeBase_h_21_SPARSE_DATA \
-	Younglings_Source_Younglings_YounglingsGameModeBase_h_21_RPC_WRAPPERS_NO_PURE_DECLS \
-	Younglings_Source_Younglings_YounglingsGameModeBase_h_21_INCLASS_NO_PURE_DECLS \
-	Younglings_Source_Younglings_YounglingsGameModeBase_h_21_ENHANCED_CONSTRUCTORS \
+	Younglings_Source_Younglings_YounglingsGameModeBase_h_23_PRIVATE_PROPERTY_OFFSET \
+	Younglings_Source_Younglings_YounglingsGameModeBase_h_23_SPARSE_DATA \
+	Younglings_Source_Younglings_YounglingsGameModeBase_h_23_RPC_WRAPPERS_NO_PURE_DECLS \
+	Younglings_Source_Younglings_YounglingsGameModeBase_h_23_INCLASS_NO_PURE_DECLS \
+	Younglings_Source_Younglings_YounglingsGameModeBase_h_23_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 

@@ -4,8 +4,10 @@
 
 #include "CoreMinimal.h"
 #include "Blueprint/UserWidget.h"
+#include "Components/EditableTextBox.h"
 #include "GameOver.generated.h"
 
+class UButton;
 /**
  * 
  */
@@ -14,12 +16,26 @@ class YOUNGLINGS_API UGameOver : public UUserWidget
 {
 	GENERATED_BODY()
 
+public:
+	UPROPERTY(VisibleInstanceOnly)
+	class AYounglingsGameModeBase* RunGameMode;
+
 protected:
+
+	UPROPERTY(EditAnywhere, BlueprintReadOnly)
+	TSubclassOf<class UUserWidget> ScoreTableWidgetClass;
+	
 	UPROPERTY(BlueprintReadWrite, meta =(BindWidget))
-	class UButton* MainMenuBtn;
+	UButton* MainMenuBtn;
 
 	UPROPERTY(BlueprintReadWrite, meta =(BindWidget))
-	class UButton* RestartBtn;
+	UButton* RestartBtn;
+
+	UPROPERTY(BlueprintReadWrite, meta =(BindWidget))
+	UButton* SaveScoreBtn;
+
+	UPROPERTY(BlueprintReadWrite, meta =(BindWidget))
+	class UEditableTextBox* NameEditableTextBox;
 
 	virtual void NativeConstruct() override;
 
@@ -28,4 +44,7 @@ protected:
 
 	UFUNCTION()
 	void OnRestartClick();
+
+	UFUNCTION()
+	void OnSaveScoreClick();
 };

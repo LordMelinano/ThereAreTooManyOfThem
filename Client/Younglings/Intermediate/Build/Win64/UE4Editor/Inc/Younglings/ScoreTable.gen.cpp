@@ -21,6 +21,7 @@ void EmptyLinkFunctionForGeneratedCodeScoreTable() {}
 	UMG_API UClass* Z_Construct_UClass_UUserWidget_NoRegister();
 	UMG_API UClass* Z_Construct_UClass_UButton_NoRegister();
 	UMG_API UClass* Z_Construct_UClass_UScrollBox_NoRegister();
+	UMG_API UClass* Z_Construct_UClass_UTextBlock_NoRegister();
 // End Cross Module References
 	DEFINE_FUNCTION(UScoreTable::execOnRestartClick)
 	{
@@ -36,12 +37,22 @@ void EmptyLinkFunctionForGeneratedCodeScoreTable() {}
 		P_THIS->OnMainMenuClick();
 		P_NATIVE_END;
 	}
+	DEFINE_FUNCTION(UScoreTable::execSetTextBlockText)
+	{
+		P_GET_PROPERTY(FTextProperty,Z_Param_YourName);
+		P_GET_PROPERTY(FTextProperty,Z_Param_YourScore);
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		P_THIS->SetTextBlockText(Z_Param_YourName,Z_Param_YourScore);
+		P_NATIVE_END;
+	}
 	void UScoreTable::StaticRegisterNativesUScoreTable()
 	{
 		UClass* Class = UScoreTable::StaticClass();
 		static const FNameNativePtrPair Funcs[] = {
 			{ "OnMainMenuClick", &UScoreTable::execOnMainMenuClick },
 			{ "OnRestartClick", &UScoreTable::execOnRestartClick },
+			{ "SetTextBlockText", &UScoreTable::execSetTextBlockText },
 		};
 		FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
 	}
@@ -89,6 +100,42 @@ void EmptyLinkFunctionForGeneratedCodeScoreTable() {}
 		}
 		return ReturnFunction;
 	}
+	struct Z_Construct_UFunction_UScoreTable_SetTextBlockText_Statics
+	{
+		struct ScoreTable_eventSetTextBlockText_Parms
+		{
+			FText YourName;
+			FText YourScore;
+		};
+		static const UE4CodeGen_Private::FTextPropertyParams NewProp_YourName;
+		static const UE4CodeGen_Private::FTextPropertyParams NewProp_YourScore;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UE4CodeGen_Private::FTextPropertyParams Z_Construct_UFunction_UScoreTable_SetTextBlockText_Statics::NewProp_YourName = { "YourName", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Text, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ScoreTable_eventSetTextBlockText_Parms, YourName), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FTextPropertyParams Z_Construct_UFunction_UScoreTable_SetTextBlockText_Statics::NewProp_YourScore = { "YourScore", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Text, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ScoreTable_eventSetTextBlockText_Parms, YourScore), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UScoreTable_SetTextBlockText_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UScoreTable_SetTextBlockText_Statics::NewProp_YourName,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UScoreTable_SetTextBlockText_Statics::NewProp_YourScore,
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UScoreTable_SetTextBlockText_Statics::Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "ScoreTable.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UScoreTable_SetTextBlockText_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UScoreTable, nullptr, "SetTextBlockText", nullptr, nullptr, sizeof(ScoreTable_eventSetTextBlockText_Parms), Z_Construct_UFunction_UScoreTable_SetTextBlockText_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UScoreTable_SetTextBlockText_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UScoreTable_SetTextBlockText_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UScoreTable_SetTextBlockText_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_UScoreTable_SetTextBlockText()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_UScoreTable_SetTextBlockText_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
 	UClass* Z_Construct_UClass_UScoreTable_NoRegister()
 	{
 		return UScoreTable::StaticClass();
@@ -116,6 +163,14 @@ void EmptyLinkFunctionForGeneratedCodeScoreTable() {}
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_ValueScrollBox_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_ValueScrollBox;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_YourNameText_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_YourNameText;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_YourScoreText_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_YourScoreText;
 		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
 		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
 		static const UE4CodeGen_Private::FClassParams ClassParams;
@@ -127,6 +182,7 @@ void EmptyLinkFunctionForGeneratedCodeScoreTable() {}
 	const FClassFunctionLinkInfo Z_Construct_UClass_UScoreTable_Statics::FuncInfo[] = {
 		{ &Z_Construct_UFunction_UScoreTable_OnMainMenuClick, "OnMainMenuClick" }, // 261677019
 		{ &Z_Construct_UFunction_UScoreTable_OnRestartClick, "OnRestartClick" }, // 3110870125
+		{ &Z_Construct_UFunction_UScoreTable_SetTextBlockText, "SetTextBlockText" }, // 4285968795
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UScoreTable_Statics::Class_MetaDataParams[] = {
@@ -169,11 +225,31 @@ void EmptyLinkFunctionForGeneratedCodeScoreTable() {}
 	};
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UScoreTable_Statics::NewProp_ValueScrollBox = { "ValueScrollBox", nullptr, (EPropertyFlags)0x002008000008000c, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UScoreTable, ValueScrollBox), Z_Construct_UClass_UScrollBox_NoRegister, METADATA_PARAMS(Z_Construct_UClass_UScoreTable_Statics::NewProp_ValueScrollBox_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UScoreTable_Statics::NewProp_ValueScrollBox_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UScoreTable_Statics::NewProp_YourNameText_MetaData[] = {
+		{ "BindWidget", "" },
+		{ "Category", "ScoreTable" },
+		{ "EditInline", "true" },
+		{ "ModuleRelativePath", "ScoreTable.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UScoreTable_Statics::NewProp_YourNameText = { "YourNameText", nullptr, (EPropertyFlags)0x002008000008000c, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UScoreTable, YourNameText), Z_Construct_UClass_UTextBlock_NoRegister, METADATA_PARAMS(Z_Construct_UClass_UScoreTable_Statics::NewProp_YourNameText_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UScoreTable_Statics::NewProp_YourNameText_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UScoreTable_Statics::NewProp_YourScoreText_MetaData[] = {
+		{ "BindWidget", "" },
+		{ "Category", "ScoreTable" },
+		{ "EditInline", "true" },
+		{ "ModuleRelativePath", "ScoreTable.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UScoreTable_Statics::NewProp_YourScoreText = { "YourScoreText", nullptr, (EPropertyFlags)0x002008000008000c, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UScoreTable, YourScoreText), Z_Construct_UClass_UTextBlock_NoRegister, METADATA_PARAMS(Z_Construct_UClass_UScoreTable_Statics::NewProp_YourScoreText_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UScoreTable_Statics::NewProp_YourScoreText_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UScoreTable_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UScoreTable_Statics::NewProp_ScoreTableRowWidgetClass,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UScoreTable_Statics::NewProp_MainMenuBtn,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UScoreTable_Statics::NewProp_RestartBtn,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UScoreTable_Statics::NewProp_ValueScrollBox,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UScoreTable_Statics::NewProp_YourNameText,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UScoreTable_Statics::NewProp_YourScoreText,
 	};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_UScoreTable_Statics::StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<UScoreTable>::IsAbstract,
@@ -202,7 +278,7 @@ void EmptyLinkFunctionForGeneratedCodeScoreTable() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UScoreTable, 340090505);
+	IMPLEMENT_CLASS(UScoreTable, 3953725644);
 	template<> YOUNGLINGS_API UClass* StaticClass<UScoreTable>()
 	{
 		return UScoreTable::StaticClass();

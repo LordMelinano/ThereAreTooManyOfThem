@@ -5,6 +5,7 @@
 
 #include "FloorTile.h"
 #include "GameHud.h"
+#include "ScoreTable.h"
 #include "Kismet/GameplayStatics.h"
 
 void AYounglingsGameModeBase::BeginPlay()
@@ -72,9 +73,9 @@ AFloorTile* AYounglingsGameModeBase::AddFloorTile(const bool bSpawnItems)
 
 void AYounglingsGameModeBase::AddCoin()
 {
-	TotalCoins += 1;
+	TotalScore += 1;
 
-	OnCoinsCountChanged.Broadcast(TotalCoins);
+	OnCoinsCountChanged.Broadcast(TotalScore);
 }
 
 void AYounglingsGameModeBase::PlayerDied()
@@ -111,6 +112,28 @@ void AYounglingsGameModeBase::PlayerDied()
 void AYounglingsGameModeBase::RemoveTile(AFloorTile* Tile)
 {
 	FloorTiles.Remove(Tile);
+}
+
+void AYounglingsGameModeBase::ShowScoreTable()
+{
+	if (IsValid(ScoreTableClass))
+	{
+		ScoreMap.insert(std::make_pair(FString("It's over Anakin"), 67));
+		ScoreMap.insert(std::make_pair(FString("I have the"), 68));
+		ScoreMap.insert(std::make_pair(FString("High Ground"), 69));
+		ScoreMap.insert(std::make_pair(FString("The Senate"), 66));
+		ScoreMap.insert(std::make_pair(FString("Like a Bantha"), 5));
+		ScoreMap.insert(std::make_pair(FString("Bantha"), 54));
+		
+		UScoreTable* ScoreTable = Cast<UScoreTable>(CreateWidget(GetWorld(), ScoreTableClass));
+		check(ScoreTable);
+
+		if (ScoreTable)
+		{
+			ScoreTable->SetTextBlockText(Name, FText::AsNumber(TotalScore));
+			ScoreTable->AddToViewport();
+		}
+	}
 }
 
 void AYounglingsGameModeBase::GameOver()
